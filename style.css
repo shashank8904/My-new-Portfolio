@@ -1,0 +1,446 @@
+/* LinkedIn and Download Button Styles */
+header nav ul li:nth-last-child(2) a,
+header nav ul li:last-child a {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li:nth-last-child(2) a:hover,
+header nav ul li:last-child a:hover {
+    color: #e67e22; /* Orange hover color */
+}
+
+header nav ul li:nth-last-child(2) a i,
+header nav ul li:last-child a i {
+    margin-right: 5px;
+}
+
+.btn.downloading {
+    background-color: #f39c12 !important; /* Change to your preferred color */
+    transition: background-color 0.3s ease;
+}
+
+.btn.downloading::after {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #fff;
+    border-right-color: transparent;
+    border-radius: 50%;
+    margin-left: 10px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #283544; /* Dark blue background */
+    color: #ffffff; /* White text color */
+}
+
+/* Header Styles */
+header {
+    background-color: #1c2331; /* Dark blue background */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header.navbar-scroll {
+    background-color: #283544; /* Darker blue on scroll */
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    font-size: larger;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #e67e22; /* Orange hover color */
+}
+
+header .burger {
+    display: none; /* Initially hidden on larger screens */
+    cursor: pointer;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #283544; /* Dark blue background */
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #e67e22; /* Orange color for headings */
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-section .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section .btn {
+    background: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-section .btn:hover {
+    background-color: #f39c12; /* Lighter orange on hover */
+}
+
+/* About Section Styles */
+.about-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #283544; /* Dark blue background */
+    color: white;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #e67e22; /* Orange color for headings */
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.skills-list,
+.certificates-list {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.skills-list h3,
+.certificates-list h3 {
+    color: #e67e22; /* Orange color for subheadings */
+}
+
+.skills-list ul,
+.certificates-list ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.skills-list ul li,
+.certificates-list ul li {
+    margin-bottom: 5px;
+}
+
+.certificates-list .btn1 {
+    margin-left: 10px;
+    background-color: #e67e22;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.certificates-list .btn1:hover {
+    background-color: #f39c12; /* Lighter orange on hover */
+}
+
+/* Services Section Styles */
+.services-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #283544; /* Dark blue background */
+    color: white;
+}
+
+.services-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #e67e22; /* Orange color for headings */
+}
+
+.services-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.service {
+    margin: 0 20px;
+    padding: 20px;
+    background-color: #1c2331; /* Dark blue background */
+    border-radius: 10px;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #e67e22; /* Orange color for headings */
+}
+
+.service p {
+    font-size: 1.1rem;
+}
+
+/* Contact Section Styles */
+.contact-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #283544; /* Dark blue background */
+    color: white;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #e67e22; /* Orange color for headings */
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .btn {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .btn:hover {
+    background-color: #f39c12; /* Lighter orange on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1c2331; /* Dark blue background */
+    color: white;
+    text-align: center;
+    padding: 1px 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1024px) {
+    header .logo {
+        font-size: 1.2rem;
+    }
+
+    header nav ul li {
+        margin-left: 10px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .about-section h2 {
+        font-size: 2rem;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+    }
+
+    .services-section h2 {
+        font-size: 2rem;
+    }
+
+    .services-list .service {
+        margin: 0 10px;
+    }
+
+    .service h3 {
+        font-size: 1.2rem;
+    }
+
+    .service p {
+        font-size: 1rem;
+    }
+
+    .contact-section h2 {
+        font-size: 2rem;
+    }
+
+    .contact-form .btn {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    header .logo {
+        font-size: 1.2rem;
+    }
+
+    header nav {
+        position: absolute;
+        top: 80px; /* Adjust as needed */
+        right: 0;
+        background-color: #1c2331; /* Dark blue background */
+        height: calc(100vh - 80px);
+        width: 200px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    header nav.active {
+        transform: translateX(0);
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    header .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none; /* Initially hide on smaller screens */
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .about-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+    }
+
+    .services-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .services-list .service {
+        margin: 0 10px;
+        padding: 15px;
+    }
+
+    .service h3 {
+        font-size: 1rem;
+    }
+
+    .service p {
+        font-size: 0.9rem;
+    }
+
+    .contact-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-form .btn {
+        font-size: 1rem;
+    }
+}

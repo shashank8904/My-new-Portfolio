@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashank's Portfolio</title>
+    <meta name="description" content="Explore Shashank Yadav's portfolio showcasing web development skills and projects.">
+    <meta name="keywords" content="web development, front-end, back-end, React, Node.js, portfolio, Shashank Yadav">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-c4lBjN47Tk3Oq/Tx8hVuqggIVhDgfb2U2kzKrLxBSiXlDgNSChkK9hBw9lmnOhn8WZaF5Urp5aShRj6b4kD3HA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">Shashank's Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+               
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Explore my work and skills in web development.</p>
+            <div class="buttons">
+                <a href="img/Fresher-B.E-Shashank-2023.pdf" download class="btn">Download Resume</a>
+                <a href="https://github.com/shashank8904" target="_blank" class="btn"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/shashank-yadav-n-b448622a7/" target="_blank" class="btn"><i
+                            class="fab fa-linkedin">Linkedin</i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am Shashank Yadav, a passionate web developer. I specialize in creating responsive and user-friendly web applications using modern technologies.</p>
+            <div class="skills-list">
+                <h3>Skills:</h3>
+                <ul>
+                    <li>HTML5, CSS3, JavaScript, React.js</li>
+                    <li>Python, Django</li>
+                    <li>MySQL</li>
+                    <li>Git, GitHub, Netlify</li>
+                </ul>
+            </div>
+            <div class="certificates-list">
+                <h3>Certifications:</h3>
+                <ul>
+                    <li>Certification of Accenture Job Simulation Participant with Forage <a href="img/accenture.pdf" download="">Download</a></li>
+                    <li>Certified Full Stack Developer from KodNest <a href="img/Kodnest.pdf" download="">Download</a></li>
+                    <li>Certified in Python by Abeyaantrix Softlab <a href="img/pythonc.pdf" download="">Download</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <h2>My Services</h2>
+            <div class="services-list">
+                <div class="service">
+                    <h3>Front-end Development</h3>
+                    <p>I specialize in creating responsive and interactive user interfaces using HTML, CSS, JavaScript and React.js.</p>
+                </div>
+                <div class="service">
+                    <h3>Back-end Development</h3>
+                    <p>I develop robust server-side applications and APIs using Django, Python and Sql.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-form">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input name="Message" rows="6" placeholder="Your Message" required></input>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Shashank's Portfolio.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"
+        integrity="sha512-8J4qXgakIS2DRg2AbhU8NeOCSZrsF9GbcSAaR3h6kWlnEVvZM68mIk8uNQUa1t0V7BZlNk5eUEOlF3GwT8F2CQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // Download Animation
+        const downloadBtn = document.querySelector('.btn[href$="Shashank_Yadav_Resume.pdf"]');
+        if (downloadBtn) {
+            downloadBtn.addEventListener('click', () => {
+                downloadBtn.classList.add('downloading');
+                setTimeout(() => {
+                    downloadBtn.classList.remove('downloading');
+                }, 2000); // Reset animation after 2 seconds
+            });
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"
+    integrity="sha512-8J4qXgakIS2DRg2AbhU8NeOCSZrsF9GbcSAaR3h6kWlnEVvZM68mIk8uNQUa1t0V7BZlNk5eUEOlF3GwT8F2CQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>
